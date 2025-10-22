@@ -14,7 +14,7 @@ from mcp_use.adapters.langchain_adapter import LangChainAdapter
 from dotenv import load_dotenv
 
 
-
+print('current working directory:', os.getcwd())
 OPENAI_KEY = os.getenv("OPENAI_API_KEY")
 LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o")
 AGENT_STEP_LIMIT = int(os.getenv("AGENT_STEP_LIMIT", "10"))
@@ -49,7 +49,7 @@ class CustomMCPAgent:
         await self.client.create_all_sessions()
         # Get the specific session, Playwright in this case
         self.session = self.client.get_session("playwright")
-        self.scenario = self.load_scenario("scenario/your_scenario.txt")
+        self.scenario = self.load_scenario("automate-browser/src/your_scenario.txt")
         self.start = time.time()
 
 
