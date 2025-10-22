@@ -47,13 +47,13 @@ git clone https://github.com/danywilliamta/AI-Automate-browser.git
 cd automate-browser
 
 ### 2. Install dependencies (using uv)
-uv sync
+uv sync and source .venv/bin/activate
 
 ### 3. Install Playwright browsers
 uv run playwright install --with-deps
 
-### 4. Add your OpenAI API key
-echo "OPENAI_API_KEY=your_api_key_here" > .env
+### 4. Add your OpenAI API key in  .env
 
-### 5. Run the agent 🚀
-uv run python mcp_agent.py
+### 5. Run the agent
+cd AI-Automate-browser
+python automate-browser/src/mcp_agent.py
