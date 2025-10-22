@@ -21,7 +21,6 @@ AGENT_STEP_LIMIT = int(os.getenv("AGENT_STEP_LIMIT", "10"))
 
 
 
-
 def clean_text(text: str) -> str:
     text = re.sub(r"```(json)?\n", "", text)
     text = re.sub(r"\n```$", "", text)
