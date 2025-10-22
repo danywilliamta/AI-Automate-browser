@@ -42,8 +42,6 @@ npm install @playwright/mcp@latest
 
 ## Quick Start
 
-
-```bash
 # 1. Clone the repository
 git clone https://github.com/danywilliamta/AI-Automate-browser.git
 cd automate-browser
