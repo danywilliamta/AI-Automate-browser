@@ -1,0 +1,31 @@
+# Scenario: AI Agent for Automated Web Testing
+
+## Objective
+The AI agent will navigate to a specified website, perform a series of actions, and validate the results.
+
+## Steps
+1. **Open Browser**
+    - Launch the web browser.
+
+2. **Navigate to Website**
+    - Go to the URL: `https://example.com`.
+
+3. **Login**
+    - Locate the username field and input: `testuser`.
+    - Locate the password field and input: `password123`.
+    - Click the "Login" button.
+
+4. **Perform Actions**
+    - Navigate to the "Products" page.
+    - Select a product from the list.
+    - Add the product to the cart.
+
+5. **Validate Cart**
+    - Navigate to the "Cart" page.
+    - Verify that the selected product is present in the cart.
+
+6. **Logout**
+    - Click the "Logout" button.
+
+## Expected Results
+- The AI agent should successfully log in, add a product to the cart, and verify its presence before logging out.
